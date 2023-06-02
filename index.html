@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Years-Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <p align="center">AGE CALCULATOR</p>
+      <br />
+      <div class="date-inputs">
+        <h5 class="header-text">Years Between Calculator: Inputs</h5>
+        <label for="Birth date">Birth Date:</label>
+        <input type="date" id="date1" />
+        <hr />
+        <label for="Current date">Current Date:</label>
+        <input type="date" id="date2" />
+      </div>
+      <br />
+      <div class="time-between-output">
+        <h5 class="header-text">Years Between Calculator: Output</h5>
+        <label for="Years now">Your Years Now:</label>
+        <input type="number" id="Output" readonly />
+        <p align="right" id="Result"></p>
+        <hr />
+        <button onclick="Calculate()">
+          <i class="fa fa-calculator" aria-hidden="true"></i>Calculate Years
+          Difference
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
